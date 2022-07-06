@@ -1,0 +1,15 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.main-wrapper {
+    height: 100%;
+}
+
+.background-image {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/pictures/main-background-bitcoin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
