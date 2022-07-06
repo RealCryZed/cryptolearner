@@ -1,6 +1,28 @@
 body, html {
     height: 100%;
     margin: 0;
+    color: #fff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
 }
 
 .main-wrapper {
@@ -9,7 +31,36 @@ body, html {
 
 .background-image {
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/pictures/main-background-bitcoin.jpg");
+    /*background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/pictures/main-background-bitcoin.jpg");*/
+    background: url("/pictures/main-background-bitcoin.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+.background-image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background-image: linear-gradient(150deg,rgba(56, 56, 56, 0.8),rgba(54,67,71,.5));*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.header {
+    position: relative;
+}
+
+.header-body {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-name {
+    display: inline-block;
+}
+
+.header-buttons {
+    display: inline-block;
 }
