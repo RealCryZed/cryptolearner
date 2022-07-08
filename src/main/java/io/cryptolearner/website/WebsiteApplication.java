@@ -18,6 +18,7 @@ public class WebsiteApplication {
 		SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
 		templateResolver.setPrefix("classpath:templates/");
 		templateResolver.setSuffix(".html");
+		templateResolver.setCacheable(false);
 		templateResolver.setTemplateMode(TemplateMode.HTML);
 		return templateResolver;
 	}

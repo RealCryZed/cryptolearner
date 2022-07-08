@@ -9,17 +9,7 @@
 <body>
     <div class="main-wrapper">
         <div class="background-image">
-            <div class="header">
-                <div class="header-body">
-                    <div class="site-name">
-                        <a th:href="@{/}">CryptoLearner</a>
-                    </div>
-                    <div class="header-buttons">
-                        <a th:href="@{/about-us}">About Us</a>
-                        <a th:href="@{/our-goal}">What's our goal</a>
-                    </div>
-                </div>
-            </div>
+            <div th:include="navbar :: navbar" class="navbar"></div>
             <div class="main-body"></div>
             <div class="footer"></div>
         </div>

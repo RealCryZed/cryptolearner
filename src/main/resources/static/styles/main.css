@@ -6,6 +6,8 @@ body, html {
 
 a {
     color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -27,6 +29,10 @@ a:hover, a:active {
 
 .main-wrapper {
     height: 100%;
+}
+
+.buttons {
+    font-size: x-large;
 }
 
 .background-image {
@@ -55,12 +61,34 @@ a:hover, a:active {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    overflow: hidden;
+    padding: 10px 20px;
 }
 
 .site-name {
     display: inline-block;
+    float: left;
+    font-size: xx-large;
 }
 
-.header-buttons {
+.header-buttons-wrapper {
     display: inline-block;
+    float: right;
+    font-size: x-large;
+    line-height: 150%;
+}
+
+.header-buttons-wrapper a {
+    border-radius: 10px;
+    padding: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.header-buttons-wrapper a:hover {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    /*box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);*/
+}
+
+#button-about-us {
+    margin-inline-end: 3vw;
 }

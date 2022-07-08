@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CryptoLearner - Free platform to learn about crypto</title>
+    <link type="text/css" rel="stylesheet" th:href="@{/styles/main.css}"/>
+</head>
+<body>
+    <div th:fragment="navbar" class="navbar">
+        <div class="header">
+            <div class="header-body">
+                <div class="site-name">
+                    <a class="buttons" th:href="@{/}">CryptoLearner</a>
+                </div>
+                <div class="header-buttons-wrapper">
+                    <a class="buttons" id="button-about-us" th:href="@{/about-us}">About Us</a>
+                    <a class="buttons" th:href="@{/our-goal}">What's our goal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
